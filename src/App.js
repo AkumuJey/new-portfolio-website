@@ -1,10 +1,11 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 function App() {
   return (
     <>
-      <div>
-        Hello World
-      </div>
+      <Routes>
+        <Route path='/' element={<Layout />}></Route>
+      </Routes>
     </>
   );
 }
