@@ -13,29 +13,31 @@ const Sidebar = () => {
                     <img src={LogoS} alt="logo" />
                     <img className='sub-logo' src={LogoSubtitle} alt="slobodan" />
                 </Link>
-                <NavLink
-                    exact="true"
-                    activeClassName="active"
-                    to="/"
-                >
-                    <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
-                </NavLink>
-                <NavLink
-                    exact="true"
-                    activeClassName="active"
-                    className="about-link"
-                    to="/about"
-                >
-                    <FontAwesomeIcon icon={faUser} color='#4d4d4e'/>
-                </NavLink>
-                <NavLink
-                    exact="true"
-                    activeClassName="active"
-                    className="contact-link"
-                    to="/contact"
-                >
-                    <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
-                </NavLink>
+                <nav>
+                    <NavLink
+                        exact="true"
+                        ctiveclassname="active"
+                        to="/"
+                    >
+                        <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
+                    </NavLink>
+                    <NavLink
+                        exact="true"
+                        ctiveclassname="active"
+                        className="about-link"
+                        to="/about"
+                    >
+                        <FontAwesomeIcon icon={faUser} color='#4d4d4e'/>
+                    </NavLink>
+                    <NavLink
+                        exact="true"
+                        ctiveclassname="active"
+                        className="contact-link"
+                        to="/contact"
+                    >
+                        <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
+                    </NavLink>
+                </nav>
             </div>
         </>
     )
