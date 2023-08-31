@@ -1,7 +1,7 @@
 import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -11,7 +11,8 @@ const Contact = () => {
         }, 3000)
       }, [])
     
-
+    const form = useRef()
+    const sendEmail = () => {}
     return (
         <>
       <div className="container contact-page">
@@ -29,7 +30,7 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            {/* <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -61,7 +62,7 @@ const Contact = () => {
                   <input type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
-            </form> */}
+            </form>
           </div>
         </div>
         <div className="info-map">
