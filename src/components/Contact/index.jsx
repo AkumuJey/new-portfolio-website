@@ -21,12 +21,14 @@ const Contact = () => {
     const [disabledTime, setDisabledTime] = useState(false)
 
     const handleFormDislay = () => {
-      setDisabledTime(true)
       setShowContactForm(!showContactForm);
+    }
+    useEffect(() => {
+      setDisabledTime(true)
       setTimeout(() => {
         setDisabledTime(false)
-      }, 2000)
-    }
+      }, 800)
+    }, [showContactForm])
     useEffect(() => {
         setTimeout(() => {
           setLetterClass('text-animate-hover')
@@ -54,7 +56,7 @@ const Contact = () => {
               onClick={handleFormDislay}
               disabled={disabledTime}
               style={buttonStyles}
-              className="contact-buttons"
+              className={`contact-buttons ${disabledTime ? 'disabled-button' : ''}`}
             >CONTACT US</button>}
           </div>
           {showContactForm && 

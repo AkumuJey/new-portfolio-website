@@ -57,7 +57,7 @@ const ContactForm = ({handleFormDislay, buttonStyles, disabledTime}) => {
                 onClick={handleFormDislay}
                 disabled={disabledTime}
                 style={buttonStyles}
-                className='contact-buttons'
+                className={`contact-buttons ${disabledTime ? 'disabled-button' : ''}`}
                 >Hide Form</button>
             </form>
           </div>

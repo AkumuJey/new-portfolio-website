@@ -1,7 +1,10 @@
 
 .contact-buttons {
-  animation: fadeInUp 1s 1s;
+  animation: fadeInUp 800ms 800ms;
   animation-fill-mode: forwards;
+}
+.disabled-button{
+  opacity: 0;
 }
 .contact-form {
     width: 100%;
@@ -21,7 +24,7 @@
         display: block;
         clear: both;
         position: relative;
-        animation: fadeInUp 2s 2s;
+        animation: fadeInUp 800ms 800ms;
         animation-fill-mode: forwards;
       }
   
