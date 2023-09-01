@@ -1,3 +1,8 @@
+
+.contact-buttons {
+  animation: fadeInUp 1s 1s;
+  animation-fill-mode: forwards;
+}
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -70,6 +75,10 @@
       float: right;
       text-align: center;
       margin-right: 10px;
+    }
+    .flat-button:hover {
+      color: #000;
+      background-color: #ffd700;
     }
   }
   
