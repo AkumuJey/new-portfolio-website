@@ -24,10 +24,14 @@ const Contact = () => {
       setShowContactForm(!showContactForm);
     }
     useEffect(() => {
-      setDisabledTime(true)
-      setTimeout(() => {
+      if (showContactForm) {
+        setDisabledTime(true)
+        setTimeout(() => {
+          setDisabledTime(false)
+        }, 800)
+      } else {
         setDisabledTime(false)
-      }, 800)
+      } 
     }, [showContactForm])
     useEffect(() => {
         setTimeout(() => {
